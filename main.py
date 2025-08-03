@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from utils import rgb_to_grayscale, apply_blur,sobel_edge_detection,rotate_image,crop_image,histogram_equalization
 
-image = Image.open("input/image.png").convert("RGB")
+image = Image.open("input/image.jpg").convert("RGB")
 image_np = np.array(image)
 
 gray_img = rgb_to_grayscale(image_np)
